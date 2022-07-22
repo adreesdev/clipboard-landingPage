@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Bai Jamjuree", sans-serif;
+}
+
+.head {
+	background-image: url("/images/bg-header-desktop.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.sub-container {
+	width: 100%;
+	max-width: 730px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2.8rem;
+	font-weight: bold;
+	color: hsl(210, 10%, 33%);
+	text-align: center;
+}
+h2 {
+	font-size: 2.3rem;
+	font-weight: bold;
+	color: hsl(210, 10%, 33%);
+	text-align: center;
+}
+h3 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: hsl(210, 10%, 33%);
+}
+
+p {
+	font-size: 1.2rem;
+	color: hsl(201, 11%, 66%);
+	line-height: 1.8;
+}
+
+.btn-ios {
+	background-color: hsl(171, 66%, 44%);
+	color: hsl(210, 10%, 100%);
+	border-style: solid;
+	border-width: 0px 1px 3px 1px;
+	border-color: hsl(171, 66%, 34%);
+	border-radius: 50px;
+	padding: 15px 35px;
+	font-size: 1.125rem;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	font-weight: 600;
+	transition-property: all;
+	transition-duration: 0.4s;
+}
+
+.btn-ios:hover {
+	background-color: hsl(171, 66%, 54%);
+	border-color: hsl(171, 66%, 44%);
+}
+.btn-mac {
+	background-color: hsl(233, 100%, 69%);
+	color: hsl(210, 10%, 100%);
+	border-style: solid;
+	border-width: 0px 1px 3px 1px;
+	border-color: hsl(228, 45%, 44%);
+	border-radius: 50px;
+	padding: 15px 35px;
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition-property: all;
+	transition-duration: 0.4s;
+}
+
+.btn-mac:hover {
+	background-color: hsl(233, 100%, 75%);
+	border-color: hsl(233, 100%, 69%);
+}
+
+.comp-contain {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.comp-img {
+	flex: 50%;
+}
+
+.comp-text {
+	flex: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.comp-subText {
+	width: 100%;
+	max-width: 420px;
+	padding: 20px;
+}
+
+.devices-img {
+	max-width: 900px;
+}
+
+.card-contain {
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 420px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+}
+
+.company {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.company img {
+	padding: 40px;
+}
+
+.foot-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px 100px 50px 100px;
+	background-color: rgb(240, 240, 240);
+}
+
+.foot-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.foot-links p {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.foot-social img {
+	padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+	.comp-img {
+		flex: 100%;
+	}
+	.comp-text {
+		flex: 100%;
+	}
+	.comp-subText {
+		text-align: center;
+	}
+	.foot-links {
+		flex-direction: column;
+	}
+
+	.foot-links p {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.sub-container,
+	.comp-contain {
+		padding: 0px 20px;
+	}
+	.btn-ios {
+		width: 100%;
+	}
+	.btn-mac {
+		width: 100%;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.8rem;
+	}
+	h3 {
+		font-size: 1.4rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.company {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
